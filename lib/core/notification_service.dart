@@ -13,7 +13,7 @@ class NotificationService {
     tz_data.initializeTimeZones();
     try {
       final timeZoneName = await FlutterTimezone.getLocalTimezone();
-      tz.setLocalLocation(tz.getLocation(timeZoneName as String));
+      tz.setLocalLocation(tz.getLocation(timeZoneName));
     } catch (e) {
       dev.log("Error initializing timezone: $e");
       // Fallback to UTC if something goes wrong
@@ -75,7 +75,7 @@ class NotificationService {
 
     await _notificationsPlugin
         .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
-        ?.requestNotificationsPermission();
+        ?.requestPermission();
   }
 
   Future<void> scheduleDailyReminder({required int hour, required int minute}) async {
