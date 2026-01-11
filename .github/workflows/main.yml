@@ -11,7 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - uses: actions/checkout@v3
+=======
+      - uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+>>>>>>> dba6081 (إعداد المشروع وربط GitHub Actions)
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
@@ -32,7 +42,11 @@ jobs:
         run: flutter build appbundle --release
 
       - name: Upload Artifacts
+<<<<<<< HEAD
         uses: actions/upload-artifact@v3
+=======
+        uses: actions/upload-artifact@v4
+>>>>>>> dba6081 (إعداد المشروع وربط GitHub Actions)
         with:
           name: release-files
           path: |
