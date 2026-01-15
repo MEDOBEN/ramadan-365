@@ -66,7 +66,7 @@ class PrayerTimesCard extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  Icon(
+                  const Icon(
                     Icons.mosque,
                     color: AppTheme.mutedGold,
                     size: 40,

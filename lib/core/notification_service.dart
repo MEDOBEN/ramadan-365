@@ -75,7 +75,7 @@ class NotificationService {
 
     await _notificationsPlugin
         .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
-        ?.requestPermission();
+        ?.requestNotificationsPermission();
   }
 
   Future<void> scheduleDailyReminder({required int hour, required int minute}) async {

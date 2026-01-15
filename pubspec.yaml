@@ -38,7 +38,7 @@ dependencies:
   just_audio: ^0.9.36
   intl: ^0.18.1
   google_fonts: ^6.1.0
-  flutter_local_notifications: ^14.1.1
+  flutter_local_notifications: ^16.1.0
   timezone: ^0.9.2
   flutter_timezone: ^1.0.8
   dio: ^5.3.0

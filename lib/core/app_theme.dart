@@ -25,17 +25,17 @@ class AppTheme {
       ),
       scaffoldBackgroundColor: softCream,
       textTheme: GoogleFonts.quicksandTextTheme(
-        TextTheme(
-          displayLarge: const TextStyle(
+        const TextTheme(
+          displayLarge: TextStyle(
             fontSize: 32,
             fontWeight: FontWeight.bold,
             color: deepTwilight,
           ),
-          bodyLarge: const TextStyle(
+          bodyLarge: TextStyle(
             fontSize: 18,
             color: deepTwilight,
           ),
-          bodyMedium: const TextStyle(
+          bodyMedium: TextStyle(
             fontSize: 16,
             color: deepTwilight,
           ),
